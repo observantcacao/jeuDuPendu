@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu du pendu</title>
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+        img{
+            width: 25%;
+            height: 25%;
+        }
+        input{
+            text-align: center;
+        }
+        #buttonLettre{
+            background-color: rgb(186, 255, 186);
+        }
+        #buttonRecommencer{
+            background-color: rgb(255, 186, 186);
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id="title">jeu du Pendu</h1>
+        <div id="trucPourAfficherLettre">
+            
+        </div>
+        <img src="image/jeuDuPendu4.png" alt="étapePendu" id="imagePendu">
+        <div >
+            <s id="trucPourAfficherLettreDejaUtiliser"></s>
+        </div>
+        <div>
+            <input type="text" name="" id="inputLettre" maxlength="1">
+            <button id="buttonLettre">tester</button>
+
+        </div>
+        <br>
+        <div>
+            <button id="buttonRecommencer">Recommencer</button>
+        </div>
+    </main>
+    <script src="JeuDuPendu.js"></script>
+</body>
+
+</html>
